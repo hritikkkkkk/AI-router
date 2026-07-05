@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "AI Router",
+  "description": "Analyze prompts and route them to the best AI platform.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "AI Router",
+    "default_popup": "src/popup/index.html"
+  },
+  "background": {
+    "service_worker": "assets/background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "permissions": ["storage", "tabs", "contextMenus", "sidePanel", "activeTab", "scripting", "downloads", "notifications"],
+  "host_permissions": ["https://chatgpt.com/*", "https://claude.ai/*", "https://www.perplexity.ai/*", "https://gemini.google.com/*", "https://runwayml.com/*", "https://lovable.dev/*"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A",
+        "mac": "Command+Shift+A"
+      },
+      "description": "Open AI Router"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
