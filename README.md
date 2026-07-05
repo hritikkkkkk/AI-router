@@ -53,7 +53,7 @@ AI-Router/
 
 Clone the repository:
 
-git clone https://github.com/yourusername/ai-router.git
+git clone https://github.com/hritikkkkkk/ai-router.git
 cd ai-router
 
 Create a virtual environment:
@@ -110,7 +110,7 @@ This project is licensed under the MIT License.
 
 👨‍💻 Author
 
-Ansh Singh
+Hritik Singh
 
 Building AI tools that simplify workflows and help users choose the right model for every task.
 
