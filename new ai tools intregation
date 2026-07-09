@@ -1,0 +1,500 @@
+{
+  "categories": [
+    { "id": "System", "label": "System", "order": 0 },
+    { "id": "General AI", "label": "General AI", "order": 1 },
+    { "id": "Coding", "label": "Coding", "order": 2 },
+    { "id": "Image Generation", "label": "Image Generation", "order": 3 },
+    { "id": "Video Generation", "label": "Video Generation", "order": 4 },
+    { "id": "Research", "label": "Research", "order": 5 },
+    { "id": "Audio", "label": "Audio", "order": 6 },
+    { "id": "Productivity", "label": "Productivity", "order": 7 }
+  ],
+  "featuredPlatformIds": ["chatgpt", "claude", "perplexity", "lovable", "gemini"],
+  "defaultRoutes": {
+    "Coding": "claude",
+    "Debugging": "claude",
+    "UI Design": "lovable",
+    "UX Design": "lovable",
+    "Math": "chatgpt",
+    "Research": "perplexity",
+    "Writing": "chatgpt",
+    "Marketing": "gemini",
+    "Business": "chatgpt",
+    "Resume": "chatgpt",
+    "Legal": "perplexity",
+    "Medical": "perplexity",
+    "Data Science": "claude",
+    "Machine Learning": "claude",
+    "DevOps": "claude",
+    "Cyber Security": "perplexity",
+    "Image Generation": "chatgpt-images",
+    "Video Generation": "runway",
+    "Presentation": "gemini",
+    "Spreadsheet": "gemini",
+    "Automation": "lovable",
+    "Translation": "chatgpt",
+    "Education": "chatgpt",
+    "General Chat": "chatgpt"
+  },
+  "tools": [
+    {
+      "id": "auto-route",
+      "name": "Auto Route",
+      "toolCategory": "System",
+      "baseUrl": "https://chatgpt.com/",
+      "promptParam": "q",
+      "description": "Let AI Router decide which platform is the best match for your prompt.",
+      "strengths": ["General Chat"],
+      "icon": "Sparkles",
+      "featured": true,
+      "isAutoRoute": true,
+      "routeBehavior": "placeholder"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "toolCategory": "General AI",
+      "baseUrl": "https://chatgpt.com/",
+      "promptParam": "q",
+      "description": "Balanced reasoning, tutoring, writing, math, translation, and general assistance.",
+      "strengths": ["General Chat", "Math", "Business", "Translation", "Education", "Writing"],
+      "icon": "MessageSquare",
+      "featured": true
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "toolCategory": "General AI",
+      "baseUrl": "https://claude.ai/new",
+      "promptParam": "q",
+      "description": "Strong code reasoning, long-context analysis, architecture, and technical writing.",
+      "strengths": ["Coding", "Debugging", "Machine Learning", "Data Science", "DevOps"],
+      "icon": "Bot",
+      "featured": true
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "toolCategory": "General AI",
+      "baseUrl": "https://gemini.google.com/app",
+      "promptParam": "q",
+      "description": "Marketing ideation, Google-fluent productivity, and multimodal drafting.",
+      "strengths": ["Marketing", "Presentation", "Spreadsheet"],
+      "icon": "Sparkles",
+      "featured": true
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "toolCategory": "General AI",
+      "baseUrl": "https://grok.com/",
+      "promptParam": "q",
+      "description": "Real-time conversational assistance with a strong web-native perspective.",
+      "strengths": ["General Chat", "Research", "Writing"],
+      "icon": "Brain"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "toolCategory": "General AI",
+      "baseUrl": "https://www.perplexity.ai/search/new",
+      "promptParam": "q",
+      "description": "Research-first answers with web-grounded sourcing and synthesis.",
+      "strengths": ["Research", "Legal", "Medical", "Cyber Security"],
+      "icon": "Search",
+      "featured": true
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "toolCategory": "General AI",
+      "baseUrl": "https://chat.deepseek.com/",
+      "promptParam": "q",
+      "description": "High-throughput coding and analytical reasoning for technical tasks.",
+      "strengths": ["Coding", "Research", "Math"],
+      "icon": "Cpu"
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "toolCategory": "General AI",
+      "baseUrl": "https://copilot.microsoft.com/",
+      "promptParam": "q",
+      "description": "Productivity-oriented assistance integrated with Microsoft workflows.",
+      "strengths": ["General Chat", "Business", "Writing"],
+      "icon": "Workflow"
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "toolCategory": "General AI",
+      "baseUrl": "https://www.meta.ai/",
+      "promptParam": "q",
+      "description": "Conversational assistance with a broad multimodal focus.",
+      "strengths": ["General Chat", "Writing"],
+      "icon": "Bot"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "toolCategory": "General AI",
+      "baseUrl": "https://chat.mistral.ai/chat",
+      "promptParam": "q",
+      "description": "Fast conversational AI for short-form reasoning and drafting.",
+      "strengths": ["General Chat", "Writing", "Business"],
+      "icon": "MessagesSquare"
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "toolCategory": "General AI",
+      "baseUrl": "https://chat.qwen.ai/",
+      "promptParam": "q",
+      "description": "Multilingual assistance for general chat and technical productivity.",
+      "strengths": ["General Chat", "Education", "Translation"],
+      "icon": "Globe"
+    },
+    {
+      "id": "pi-ai",
+      "name": "Pi AI",
+      "toolCategory": "General AI",
+      "baseUrl": "https://pi.ai/talk",
+      "promptParam": "q",
+      "description": "Warm and conversational AI for daily assistance and coaching.",
+      "strengths": ["General Chat", "Education", "Writing"],
+      "icon": "MessageCircle"
+    },
+    {
+      "id": "poe",
+      "name": "Poe",
+      "toolCategory": "General AI",
+      "baseUrl": "https://poe.com/",
+      "promptParam": "q",
+      "description": "A unified hub for multiple models and styles of conversation.",
+      "strengths": ["General Chat", "Research", "Writing"],
+      "icon": "Layers"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "toolCategory": "Coding",
+      "baseUrl": "https://www.cursor.com/",
+      "promptParam": "q",
+      "description": "AI-native editor workflows for coding, refactoring, and debugging.",
+      "strengths": ["Coding", "Debugging", "DevOps"],
+      "icon": "Code2"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "toolCategory": "Coding",
+      "baseUrl": "https://github.com/features/copilot",
+      "promptParam": "q",
+      "description": "Developer assistance directly in the GitHub ecosystem and editor workflows.",
+      "strengths": ["Coding", "Debugging", "DevOps"],
+      "icon": "TerminalSquare"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "toolCategory": "Coding",
+      "baseUrl": "https://windsurf.com/",
+      "promptParam": "q",
+      "description": "Collaborative coding environment with AI-assisted build and test flows.",
+      "strengths": ["Coding", "Debugging", "Automation"],
+      "icon": "Zap"
+    },
+    {
+      "id": "bolt-new",
+      "name": "Bolt.new",
+      "toolCategory": "Coding",
+      "baseUrl": "https://bolt.new/",
+      "promptParam": "prompt",
+      "description": "Rapid prototyping and app scaffolding for full-stack ideas.",
+      "strengths": ["Coding", "UI Design", "Automation"],
+      "icon": "Rocket"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "toolCategory": "Coding",
+      "baseUrl": "https://lovable.dev/",
+      "promptParam": "prompt",
+      "description": "Fast product, UI, and app prototyping from natural language.",
+      "strengths": ["UI Design", "UX Design", "Automation"],
+      "icon": "Palette",
+      "featured": true
+    },
+    {
+      "id": "v0",
+      "name": "v0",
+      "toolCategory": "Coding",
+      "baseUrl": "https://v0.dev/",
+      "promptParam": "prompt",
+      "description": "UI generation and component composition for modern frontends.",
+      "strengths": ["UI Design", "Writing", "Automation"],
+      "icon": "Package"
+    },
+    {
+      "id": "replit-ai",
+      "name": "Replit AI",
+      "toolCategory": "Coding",
+      "baseUrl": "https://replit.com/",
+      "promptParam": "q",
+      "description": "Cloud-based coding with AI-assisted build, debug, and ship loops.",
+      "strengths": ["Coding", "Debugging", "Automation"],
+      "icon": "Files"
+    },
+    {
+      "id": "devin",
+      "name": "Devin",
+      "toolCategory": "Coding",
+      "baseUrl": "https://devin.ai/",
+      "promptParam": "q",
+      "description": "Autonomous coding workflows for multi-step implementation tasks.",
+      "strengths": ["Coding", "Debugging", "DevOps"],
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": "chatgpt-images",
+      "name": "ChatGPT Images",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://chatgpt.com/",
+      "promptParam": "q",
+      "description": "Image creation and visual ideation with prompt-aware editing workflows.",
+      "strengths": ["Image Generation", "UI Design"],
+      "icon": "Image"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://www.midjourney.com/",
+      "promptParam": "prompt",
+      "description": "Stylized image generation with cinematic and artistic direction.",
+      "strengths": ["Image Generation"],
+      "icon": "Image"
+    },
+    {
+      "id": "flux",
+      "name": "FLUX",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://blackforestlabs.ai/",
+      "promptParam": "prompt",
+      "description": "High-fidelity image generation for visual concepts and compositions.",
+      "strengths": ["Image Generation"],
+      "icon": "Image"
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://ideogram.ai/",
+      "promptParam": "q",
+      "description": "Text-rich image generation for logos, posters, and labels.",
+      "strengths": ["Image Generation"],
+      "icon": "Image"
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://firefly.adobe.com/",
+      "promptParam": "prompt",
+      "description": "Commercially safe image creation and editing inside Adobe workflows.",
+      "strengths": ["Image Generation"],
+      "icon": "Palette"
+    },
+    {
+      "id": "leonardo-ai",
+      "name": "Leonardo AI",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://leonardo.ai/",
+      "promptParam": "prompt",
+      "description": "Customizable image generation for concept art and design exploration.",
+      "strengths": ["Image Generation"],
+      "icon": "Image"
+    },
+    {
+      "id": "playground-ai",
+      "name": "Playground AI",
+      "toolCategory": "Image Generation",
+      "baseUrl": "https://playground.com/",
+      "promptParam": "prompt",
+      "description": "Fast visual experiments with multiple style and composition options.",
+      "strengths": ["Image Generation"],
+      "icon": "Image"
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "toolCategory": "Video Generation",
+      "baseUrl": "https://runwayml.com/",
+      "promptParam": "prompt",
+      "description": "Video generation, motion design, and creative media workflows.",
+      "strengths": ["Video Generation"],
+      "icon": "Video",
+      "featured": true
+    },
+    {
+      "id": "veo",
+      "name": "Google Veo",
+      "toolCategory": "Video Generation",
+      "baseUrl": "https://deepmind.google/models/veo/",
+      "promptParam": "q",
+      "description": "High-quality video generation with cinematic prompt interpretation.",
+      "strengths": ["Video Generation"],
+      "icon": "Video"
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "toolCategory": "Video Generation",
+      "baseUrl": "https://pika.art/",
+      "promptParam": "prompt",
+      "description": "Short-form video creation and motion-driven visual storytelling.",
+      "strengths": ["Video Generation"],
+      "icon": "Video"
+    },
+    {
+      "id": "kling",
+      "name": "Kling AI",
+      "toolCategory": "Video Generation",
+      "baseUrl": "https://klingai.com/",
+      "promptParam": "prompt",
+      "description": "Text-to-video generation for stylized cinematic scenes.",
+      "strengths": ["Video Generation"],
+      "icon": "Video"
+    },
+    {
+      "id": "luma",
+      "name": "Luma Dream Machine",
+      "toolCategory": "Video Generation",
+      "baseUrl": "https://lumalabs.ai/dream-machine",
+      "promptParam": "prompt",
+      "description": "Dream-like motion generation for concept and product videos.",
+      "strengths": ["Video Generation"],
+      "icon": "Video"
+    },
+    {
+      "id": "hailuo",
+      "name": "Hailuo AI",
+      "toolCategory": "Video Generation",
+      "baseUrl": "https://hailuoai.com/",
+      "promptParam": "prompt",
+      "description": "Accessible video generation for fast creative iteration.",
+      "strengths": ["Video Generation"],
+      "icon": "Video"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "toolCategory": "Research",
+      "baseUrl": "https://notebooklm.google.com/",
+      "promptParam": "q",
+      "description": "Research synthesis and grounded note generation from source material.",
+      "strengths": ["Research", "Education"],
+      "icon": "BookOpen"
+    },
+    {
+      "id": "elicit",
+      "name": "Elicit",
+      "toolCategory": "Research",
+      "baseUrl": "https://elicit.com/",
+      "promptParam": "q",
+      "description": "Evidence extraction and literature review support for research workflows.",
+      "strengths": ["Research"],
+      "icon": "Search"
+    },
+    {
+      "id": "consensus",
+      "name": "Consensus",
+      "toolCategory": "Research",
+      "baseUrl": "https://consensus.app/",
+      "promptParam": "q",
+      "description": "Research-backed answers grounded in scientific and academic sources.",
+      "strengths": ["Research", "Medical"],
+      "icon": "Search"
+    },
+    {
+      "id": "scispace",
+      "name": "SciSpace",
+      "toolCategory": "Research",
+      "baseUrl": "https://typeset.io/",
+      "promptParam": "q",
+      "description": "Paper understanding and technical literature exploration.",
+      "strengths": ["Research", "Data Science"],
+      "icon": "BookOpen"
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "toolCategory": "Audio",
+      "baseUrl": "https://suno.com/",
+      "promptParam": "q",
+      "description": "Music generation for songwriting, demos, and audio concepts.",
+      "strengths": ["Writing", "Automation"],
+      "icon": "Music"
+    },
+    {
+      "id": "udio",
+      "name": "Udio",
+      "toolCategory": "Audio",
+      "baseUrl": "https://www.udio.com/",
+      "promptParam": "q",
+      "description": "High-quality music generation with creative direction and style control.",
+      "strengths": ["Writing", "Automation"],
+      "icon": "Music"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "toolCategory": "Audio",
+      "baseUrl": "https://elevenlabs.io/",
+      "promptParam": "q",
+      "description": "Voice generation and narration for podcasts, demos, and content creation.",
+      "strengths": ["Writing", "Presentation"],
+      "icon": "Mic2"
+    },
+    {
+      "id": "notion-ai",
+      "name": "Notion AI",
+      "toolCategory": "Productivity",
+      "baseUrl": "https://www.notion.so/product/ai",
+      "promptParam": "q",
+      "description": "Workspace-native drafting, note-taking, and knowledge organization.",
+      "strengths": ["Writing", "Business", "Education"],
+      "icon": "FileText"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "toolCategory": "Productivity",
+      "baseUrl": "https://gamma.app/",
+      "promptParam": "q",
+      "description": "Presentation and content generation designed for quick storytelling.",
+      "strengths": ["Presentation", "Writing"],
+      "icon": "FileText"
+    },
+    {
+      "id": "canva-ai",
+      "name": "Canva AI",
+      "toolCategory": "Productivity",
+      "baseUrl": "https://www.canva.com/ai-image-generator/",
+      "promptParam": "q",
+      "description": "Design creation and editable assets for marketing and social content.",
+      "strengths": ["Marketing", "Presentation", "Image Generation"],
+      "icon": "Palette"
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "toolCategory": "Productivity",
+      "baseUrl": "https://www.grammarly.com/",
+      "promptParam": "q",
+      "description": "Polish writing and improve clarity across documents and messages.",
+      "strengths": ["Writing", "Business"],
+      "icon": "PenTool"
+    }
+  ]
+}
