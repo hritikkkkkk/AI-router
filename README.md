@@ -1,3 +1,6 @@
+One interface. Every AI model. Zero switching.
+
+AI Router is a smart desktop application that automatically routes your prompt to the most suitable AI model based on the task. Instead of manually deciding whether to use ChatGPT, Claude, Gemini, Perplexity, or another AI, AI Router analyzes your request and sends it to the best model for the job.
 
 ✨ Features
 🤖 Automatic AI model selection
@@ -15,7 +18,7 @@ Perplexity
 GitHub Copilot
 DeepSeek
 Grok
-More models can be added easily
+
 📌 How It Works
 Enter your prompt.
 AI Router analyzes the request.
