@@ -21,4 +21,10 @@ Your manifest.json should use Manifest V3.
 
 
 Step 2: Test it locally
+Open:
 
+chrome://extensions/
+Enable Developer mode.
+Click Load unpacked.
+Select your extension folder.
+Fix any errors before publishing.
