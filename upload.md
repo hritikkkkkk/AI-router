@@ -18,3 +18,7 @@ my-extension/
 │── assets/
 
 Your manifest.json should use Manifest V3.
+
+
+Step 2: Test it locally
+
