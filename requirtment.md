@@ -1,3 +1,4 @@
 requrment
 
 laptop
+chrome
