@@ -1,0 +1,13 @@
+Repository: agent-flow
+
+Build AI workflows visually:
+
+Drag-and-drop nodes
+LLM node
+Search node
+Python execution
+Memory
+Conditions
+API calls
+
+Think of it as a lightweight LangFlow or n8n for AI.
