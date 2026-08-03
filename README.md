@@ -18,7 +18,8 @@ Perplexity
 GitHub Copilot
 DeepSeek
 Grok
-other 225 LLM
+other 225 LLM tool
+//////////
 📌 How It Works
 Enter your prompt!!
 AI Router analyzes the request.
