@@ -20,7 +20,7 @@ DeepSeek
 Grok
 
 📌 How It Works
-Enter your prompt.
+Enter your prompt!!
 AI Router analyzes the request.
 Detects the category (coding, research, writing, math, image generation, etc.).
 Selects the most suitable AI model.
