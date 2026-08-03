@@ -35,6 +35,7 @@ Mathematical Problems	ChatGPT
 UI/UX Design	Claude
 Image Generation	Gemini / ChatGPT
 Quick Facts	Perplexity
+/////////////////////////////////
 📂 Project Structure
 AI-Router/
 │
