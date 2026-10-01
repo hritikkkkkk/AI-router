@@ -8,3 +8,8 @@ async function loadProducts() {
   const products = await response.json();
 
  
+ myDisplayer(products[0].name);
+  myDisplayer(products[0].price);
+}
+
+loadProducts();
