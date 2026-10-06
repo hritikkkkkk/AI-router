@@ -112,7 +112,7 @@ This project is licensed under the MIT License.
 
 👨‍💻 Author
 
-Hritik Singh
+Hritik Singh,lets build togther
 
 Building AI tools that simplify workflows and help users choose the right model for every task.
 
