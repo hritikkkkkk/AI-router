@@ -26,3 +26,17 @@ class Solution {
         Arrays.sort(squares);
 
       
+  long ans = 0;
+        int n = squares.length;
+
+        for (int i = 0; i < n; i++) {
+            if (i < n / 2) {
+                ans -= squares[i];
+            } else {
+                ans += squares[i];
+            }
+        }
+
+        return ans;
+    }
+}
